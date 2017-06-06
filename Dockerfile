@@ -5,6 +5,7 @@ RUN apt-get -qq update \
     && apt-get install -y make unrar-free autoconf automake libtool libtool-bin \
        gcc g++ gperf flex bison texinfo gawk ncurses-dev libexpat-dev python-dev \
        python python-serial sed git unzip bash help2man wget bzip2 vim picocom \
+       nano \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
@@ -31,6 +32,8 @@ ENV PATH /home/esp/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
 # Add ESP_OPEN_RTOS variable to point to path so that makefiles don't *have* to live in the
 # examples directory (will require your makefile to reference $(ESP_OPEN_RTOS)/common.mk
 ENV ESP_OPEN_RTOS=/home/esp/esp-open-rtos
+
+COPY image/oem.sh /home/esp
 
 # Get the esp-open-rtos SDK
 RUN git clone --recursive https://github.com/Superhouse/esp-open-rtos.git $ESP_OPEN_RTOS
