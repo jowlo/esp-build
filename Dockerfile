@@ -35,8 +35,8 @@ ENV ESP_OPEN_RTOS=/home/esp/esp-open-rtos
 
 COPY image/oem.sh /home/esp
 
-ARG RTOS_REPO=https://github.com/Superhouse/esp-open-rtos.git
-ARG RTOS_REPO_BRANCH=master
+ARG RTOS_REPO=https://github.com/ourairquality/esp-open-rtos.git
+ARG RTOS_REPO_BRANCH=lwip2
 
 # Get the esp-open-rtos SDK
 RUN git clone -b $RTOS_REPO_BRANCH --recursive $RTOS_REPO $ESP_OPEN_RTOS
