@@ -35,8 +35,11 @@ ENV ESP_OPEN_RTOS=/home/esp/esp-open-rtos
 
 COPY image/oem.sh /home/esp
 
+ARG RTOS_REPO=https://github.com/Superhouse/esp-open-rtos.git
+ARG RTOS_REPO_BRANCH=master
+
 # Get the esp-open-rtos SDK
-RUN git clone --recursive https://github.com/Superhouse/esp-open-rtos.git $ESP_OPEN_RTOS
+RUN git clone -b $RTOS_REPO_BRANCH --recursive $RTOS_REPO $ESP_OPEN_RTOS
 
 # Create the directory we'll put our work in
 RUN mkdir /home/esp/esp-open-rtos/examples/project
