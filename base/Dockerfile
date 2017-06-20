@@ -28,5 +28,3 @@ RUN cd /home/esp/esp-open-sdk && make toolchain esptool libhal STANDALONE=n && \
 
 # Add the esp-open-sdk bin folder to PATH
 ENV PATH /home/esp/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
-
-COPY image/oem.sh /home/esp
