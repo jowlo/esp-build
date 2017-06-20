@@ -1,6 +1,5 @@
 ARG BASE_IMAGE
 
-#FROM malachib/esp-build:2017.06.20-base
 FROM $BASE_IMAGE
 
 COPY image/oem.sh /home/esp
@@ -11,6 +10,7 @@ ENV ESP_OPEN_RTOS=/home/esp/esp-open-rtos
 
 ARG RTOS_REPO=https://github.com/malachi-iot/esp-open-rtos.git
 ARG RTOS_REPO_BRANCH=lwip2
+ARG CACHEBUST=1
 
 # Get the esp-open-rtos SDK
 RUN git clone -b $RTOS_REPO_BRANCH --recursive $RTOS_REPO $ESP_OPEN_RTOS
