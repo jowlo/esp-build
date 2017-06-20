@@ -1,6 +1,6 @@
 Base image on which the main esp-build image rests
 
-NOTE: EXPERIMENTAL and not being used at the moment
+Can be thought of as esp-open-sdk, not naming it as such right now since it's still experimental
 
 Since we have many flavors of esp-build, but all can share the same layers
 defined here

@@ -1,1 +1,1 @@
-docker build -t "malachib/esp-build:2017.06.20-base" .
+docker build -t "malachib/esp-open-rtos:2017.06.20-base" .
