@@ -71,3 +71,13 @@ With any flashing baud rate, I have noticed more occasional errors with this set
 The flash will sometimes get stuck at 99% with `A fatal error occurred: Timed out waiting for packet header`. I've found this actually happens *less* often on 921600 baud,
 but it can still happen. If anyone knows what's up with that, please let me know!
  
+
+Tagging Info
+------------
+
+Tags are as follows:
+
+*YYYY.MM.DD* - stock build of SuperHouse esp-open-rtos on said date
+*latest* - latest stock build of SuperHouse esp-open-rtos
+*YYYY.MM.DD-ourairquality" - build of ourairquality esp-open-rtos fork, ourairquality branch on said date
+"latest-ourairquality" - latest build of ourairquality esp-open-rtos fork, ourairquality branch 
