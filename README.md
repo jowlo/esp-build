@@ -78,6 +78,9 @@ Tagging Info
 Tags are as follows:
 
 *YYYY.MM.DD* - stock build of SuperHouse esp-open-rtos on said date
+
 *latest* - latest stock build of SuperHouse esp-open-rtos
-*YYYY.MM.DD-ourairquality" - build of ourairquality esp-open-rtos fork, ourairquality branch on said date
-"latest-ourairquality" - latest build of ourairquality esp-open-rtos fork, ourairquality branch 
+
+*YYYY.MM.DD-ourairquality* - build of ourairquality esp-open-rtos fork, ourairquality branch on said date
+
+*latest-ourairquality* - latest build of ourairquality esp-open-rtos fork, ourairquality branch 
