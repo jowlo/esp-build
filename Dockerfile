@@ -8,11 +8,12 @@ COPY image/oem.sh /home/esp
 # examples directory (will require your makefile to reference $(ESP_OPEN_RTOS)/common.mk
 ENV ESP_OPEN_RTOS=/home/esp/esp-open-rtos
 
+ARG CACHEBUST=1
 ARG RTOS_REPO=https://github.com/malachi-iot/esp-open-rtos.git
 ARG RTOS_REPO_BRANCH=lwip2
-ARG CACHEBUST=1
 
 # Get the esp-open-rtos SDK
+RUN ["sh", "-c", "echo Commencing on repo $RTOS_REPO"]
 RUN git clone -b $RTOS_REPO_BRANCH --recursive $RTOS_REPO $ESP_OPEN_RTOS
 
 # Create the directory we'll put our work in
