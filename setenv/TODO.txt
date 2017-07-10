@@ -1,0 +1,2 @@
+Need to reset BASE_IMAGE
+Also Mal github is getting stuck in docker build cache somehow

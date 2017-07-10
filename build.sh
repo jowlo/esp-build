@@ -1,6 +1,7 @@
 #!/bin/bash
 
-. ./setenv.sh
+# TODO: put in failsafe to quit if requisite env variables aren't present
+#. ./setenv.sh
 
 docker build --build-arg RTOS_REPO=$GIT_REPO \
   --build-arg RTOS_REPO_BRANCH=$GIT_BRANCH \
@@ -8,4 +9,9 @@ docker build --build-arg RTOS_REPO=$GIT_REPO \
   --build-arg CACHEBUST=$(date +%s) \
    -t "$REPO:$TAG" .
 
-docker tag $REPO:$TAG $REPO:latest-$TAG_SUFFIX
+if [ -z "$TAG_SUFFIX" ]; then
+  docker tag $REPO:$TAG $REPO:latest
+else
+  docker tag $REPO:$TAG $REPO:latest-$TAG_SUFFIX
+fi
+
