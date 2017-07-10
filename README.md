@@ -1,7 +1,7 @@
 esp-open-rtos Build Environment
 ===============================
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/malachib/esp-open-rtos.svg)](https://hub.docker.com/r/malachib/esp-open-rtos/) [![Docker Stars](https://img.shields.io/docker/stars/malachib/esp-open-rtos.svg)](https://hub.docker.com/r/malachib/esp-open-rtos/) [![](https://images.microbadger.com/badges/image/bschwind/esp-open-rtos.svg)](https://microbadger.com/images/bschwind/esp-open-rtos "Get your own image badge on microbadger.com") [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/bschwind/esp-build/blob/master/LICENSE)
+[![Docker Pulls](https://img.shields.io/docker/pulls/malachib/esp-open-rtos.svg)](https://hub.docker.com/r/malachib/esp-open-rtos/) [![Docker Stars](https://img.shields.io/docker/stars/malachib/esp-open-rtos.svg)](https://hub.docker.com/r/malachib/esp-open-rtos/) [![](https://images.microbadger.com/badges/image/malachib/esp-open-rtos.svg)](https://microbadger.com/images/malachib/esp-open-rtos "Get your own image badge on microbadger.com") [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/bschwind/esp-build/blob/master/LICENSE)
 
 This Dockerfile contains the dependencies necessary to create a toolchain for the ESP8266 chip.
 It is based on [esp-open-rtos](https://github.com/SuperHouse/esp-open-rtos) and allows for easy building and flashing
