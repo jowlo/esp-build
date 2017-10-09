@@ -1,6 +1,4 @@
-ARG BASE_IMAGE
-
-FROM $BASE_IMAGE
+FROM debian:latest
 
 COPY image/oem.sh /home/esp
 
